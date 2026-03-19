@@ -96,7 +96,7 @@ ol {
 }
 
 .content__list-container {
-  height: 299px;
+  height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -210,5 +210,37 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   margin-top: auto;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 6px 74px;
+  cursor: pointer;
+  min-height: 34px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
