@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  justify-content: center;
+  align-items: center;
+  padding: 132px 30px;
 }
 
 h1,
@@ -48,4 +51,36 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 710px 400px;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 1140px;
+  min-height: 532px;
+  align-items: flex-end;
+}
+
+.result {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.result__video-container {
+  position: relative;
+  width: 100%;
+  height: 385px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
